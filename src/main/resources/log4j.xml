@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<param name="threshold" value="info" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n"/>
+		</layout>
+	</appender>
+	<appender name="debugfile" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- Rollover at midnight each day -->
+		<param name="DatePattern" value="'.'yyyy-MM-dd"/>
+		<param name="Append" value="true" />
+		<param name="File" value="/var/log/jboss4/war/hkmyynti/debug.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c:%L] - %m%n"/>
+		</layout>
+	</appender>
+	<appender name="infofile" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- Rollover at midnight each day -->
+		<param name="DatePattern" value="'.'yyyy-MM-dd"/>
+		<param name="Append" value="true" />
+		<param name="File" value="/var/log/jboss4/war/hkmyynti/info.log" />
+		<param name="threshold" value="info" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c:%L] - %m%n"/>
+		</layout>
+	</appender>
+	<appender name="errorfile" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- Rollover at midnight each day -->
+		<param name="DatePattern" value="'.'yyyy-MM-dd"/>
+		<param name="Append" value="true" />
+		<param name="File" value="/var/log/jboss4/war/hkmyynti/error.log" />
+		<param name="threshold" value="error" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c:%L] - %m%n"/>
+		</layout>
+	</appender>
+	<appender name="consolefile" class="org.apache.log4j.RollingFileAppender">
+		<param name="Append" value="true" />
+		<param name="File" value="/var/log/jboss4/war/hkmyynti/console.log" />
+		<param name="threshold" value="info" />
+		<param name="MaxFileSize" value="10MB"/>
+		<param name="MaxBackupIndex" value="5"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c:%L] - %m%n"/>
+		</layout>
+	</appender>
+
+	<category name="fi.jonix.hkmyynti">
+		<priority value="debug" />
+		<appender-ref ref="debugfile" />
+		<appender-ref ref="infofile" />
+		<appender-ref ref="errorfile" />
+		<appender-ref ref="stdout" />
+	</category>
+
+	<root>
+		<appender-ref ref="consolefile" />
+	</root>
+</log4j:configuration>

@@ -1,0 +1,393 @@
+body
+{
+font-family: arial;
+font-size:10pt;
+background-color: #abcbe2;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:0px;
+
+width:70%;
+
+height: 100%;
+}
+
+h1
+{
+font-family: arial;
+font-size:26pt;
+font-weight: bold;
+color: #000000;
+
+}
+
+h2
+{
+font-family: arial;
+font-size:12pt;
+font-weight: bold;
+color: #6f8493;
+
+}
+
+h3
+{
+font-family: arial;
+font-size:11pt;
+font-weight: bold;
+color: #6f8493;
+line-height:1pt;
+
+}
+
+li a
+{
+font-family: arial;
+font-size:11pt;
+font-weight: bold;
+line-height: 1.5em;
+float: left;
+width: 132px;
+/*display: block;*/
+/*background-image: url(http://kuvat.uuu.fi/1_button_palkki_sin.jpg);*/
+/*border: 0.1em solid #808080;*/
+color: #000000;
+text-decoration: none;
+text-align: center;
+margin: 0px;
+}
+
+li a.NotChosen
+{
+color: #000000;
+border-right: 0.1em dotted #dddddd; 
+}
+
+li a.Chosen
+{
+color: #6f8493;  
+border-right: 0.1em dotted #dddddd; 
+} 
+
+li a:hover
+{
+color: #6f8493;    
+border-right: 0.1em dotted #dddddd; 
+}
+
+
+li
+{
+display:inline;
+}
+
+table
+{
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+
+}
+
+td
+{
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+
+}
+
+A:link
+{
+text-decoration: none;
+color: #ffffff;
+}
+
+A:visited
+{
+text-decoration: none;
+color: #6f8493;
+}
+
+A:active
+{
+text-decoration: none;
+color: #6f8493;
+}
+
+A:hover
+{
+text-decoration: none;
+color: #555593; 
+}
+
+
+#main
+{
+
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+
+width: 900px;
+}
+
+#content
+{
+}
+
+#header
+{
+}
+
+#header-left
+{
+
+
+}
+
+#header-center
+{
+background-image: url(../../images/33_pohja_sin_900_yla.jpg);
+background-repeat: no-repeat;
+height: 100px;
+
+
+text-align: left;
+
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:35px;
+padding-right:0px;
+}
+
+#header-right
+{
+
+
+}
+
+#left
+{
+
+}
+
+#left-top
+{
+
+
+}
+
+#left-mid
+{ 
+
+ 
+}
+
+#left-bot
+{
+
+}
+
+#center
+{
+}
+
+#center-top ul
+{
+
+}
+
+
+#center-top td
+{
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+}
+
+#center-top
+{
+position: relative;
+top: -14px;
+
+background-image: url(../../images/33_pohja_sin_900_line.jpg);
+background-repeat: repeat-y;
+
+height: 50px;
+
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:35px;
+padding-right:0px;
+
+
+
+}
+#center-mid td
+{
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+border: 0px;
+}
+
+
+#center-mid
+{
+background-image: url(../../images/33_pohja_sin_900_mid.jpg);
+background-repeat: repeat-y;
+
+position: relative;
+top: -14px;
+width: 830px;
+
+
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:10px;
+padding-bottom:10px;
+padding-left:35px;
+padding-right:35px;
+
+text-align: left;
+background-image: url(../../images/33_pohja_sin_900_mid.jpg);
+background-repeat: repeat-y;
+}
+
+#center-bot td
+{
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+
+}
+
+#center-bot
+{
+position: relative;
+top: -20px;
+
+background-image: url(../../images/33_pohja_sin_900_ala.jpg);
+background-repeat: repeat-y;
+
+height: 47px;
+
+
+}
+
+#right
+{
+
+}
+
+#right-top
+{
+
+
+}
+
+
+#right-mid
+{
+
+}
+
+#right-bot
+{
+
+
+}
+
+#footer
+{
+
+}
+
+#footer-left
+{
+font-size:6pt;
+color: #abcbe2;
+   
+}
+
+
+
+#footer-center 
+{
+position: relative;
+top: -45px;
+background-image: url(../../images/33_pohja_sin_all.jpg);
+background-repeat: no-repeat;
+font-size:8pt;
+color: #ffffff;
+height: 114px;
+padding-left:35px;
+}
+
+#footer-right
+{
+font-size:6pt;
+color: #abcbe2;
+}
+.form-error-message { color: #8B0000 }
+.gray { color: #848484 }
+.loading { background-image: url(../../images/loader.gif) }
+.mainInfo { color: #33FF33 }
+
